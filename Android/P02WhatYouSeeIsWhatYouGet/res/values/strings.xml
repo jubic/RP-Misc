@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hello">Hello</string>
+    <string name="app_name">Week2</string>
+    <string name="button">Submit Now!</string>
+    <string name="number">Number to send</string>
+    <string name="message">Message</string>
+    <string name="send">Send SMS</string>
+    <string name="weight">Weight in Kilogram</string>
+    <string name="height">Height in Meters</string>
+    <string name="age">Age</string>
+    <string name="calculate">Calculate!</string>
+    <string name="sgTime">Singapore Time</string>
+    <string name="usTime">US Time</string>
+    <string name="submit">Submit</string>
+    <string name="reset">Reset</string>
+    <string name="worldTime">WORLD TIME</string>
+    <string name="enterTime">ENTER TIME:</string>
+    <string name="twelveHR">12HR FORMAT</string>
+    <string name="twentyFourHR">24HR FORMAT</string>
+</resources>

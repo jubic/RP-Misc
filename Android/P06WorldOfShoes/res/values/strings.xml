@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hello">Hello World, World Of Shoes!</string>
+    <string name="app_name">World Of Shoes</string>
+    <string name="modelString1">Model Name:</string>
+    <string name="modelString2">Model Number: </string>
+    <string name="modelString3">Price: </string>
+    <string name="modelString4">Address: </string>
+    <string name="modelString7">URL:</string>
+    <string name="modelString5">Email: </string>
+    <string name="modelString6">Phone Number</string>
+    <string name="modelString8">Opening Hour</string>
+    <string name="modelString9">Closing Hour</string>
+    <string name="modelBtn1">Call This Number</string>
+    <string name="modelBtn2">Go to Website</string>
+    <string name="modelString10">Exit this application</string>
+</resources>

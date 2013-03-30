@@ -1,0 +1,117 @@
+Question 1:
+----------
+Given a list of names, ["joe", "bob", "charlie", "amy", "john"] - write a code to randomly choose 3 names and print it out as (for example):
+
+1 . joe
+2 . amy
+3 . john
+
+Make sure there's no repetition on the name.
+
+Answer:
+-------
+* Short and sweet:
+
+import random
+names = ["joe", "bob", "charlie", "amy", "john"]
+result = random.sample(names, 3)
+for i in range(len(result)):
+	print i + 1, '.', result[i]
+
+
+* Long and winding:
+
+import random
+names = ["joe", "bob", "charlie", "amy", "john"]
+result = []
+while len(result) < 3:
+	i = random.randint(0, len(names) - 1)
+	if not names[i] in result:
+		result.append(names[i])
+
+
+Question 2:
+-----------
+Given a string in "string.letters" (it contains: abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ), write a code to extract characters in the position that's multiple of 5. Example: ('e', 'j', etc)
+
+Answer:
+------
+import string
+letters = string.letters
+for i in range(len(string.letters)):
+    if (i+1) % 5 == 0: print string.letters[i]
+
+
+Question 3:
+-----------
+Create a list of 5 random numbers. The random number range should be from 1 to 20. It's ok if the list consists of repeated numbers.
+
+Answer:
+-------
+import random
+numlist = []
+for i in range(5):
+	numlist.append(random.randint(1,20))
+
+Question 4:
+-----------
+Create a list of 5 random EVEN numbers. The random number range should be from 1 to 20. It's ok if the list consists of repeated numbers.
+
+Answer:
+-------
+import random
+numlist = []
+while len(numlist) < 5:
+	n = random.randint(1,20)
+	if n % 2 == 0:
+		numlist.append(n)
+
+Question 5:
+-----------
+Given a list of words ["republic", "poly", "pbl", "learning", "with", "difference"]. Select 2 random words from that list, combine them into a single string (to make a password):
+
+Answer:
+-------
+words = ["republic", "poly", "pbl", "learning", "with", "difference"]
+import random
+choice1 = random.randint(0, len(words) - 1)
+choice2 = random.randint(0, len(words) - 1)
+print "password is:", choice1 + choice2
+
+Question 6:
+-----------
+Add 2 different random integers. The random integer range is from 0 to 100.
+
+Answer:
+------
+import random
+print random.randint(0,100) + random.randint(0,100)
+
+Question 7:
+-----------
+Given 2 lists ["chicken", "mouse", "cat", "dog", "horse", "cow"] and ["apple", "orange", "durian", "banana"]. 
+
+Generate 3 passwords where each password consist of random selection from each list. The output may look something like "catbanana".
+
+Answer:
+-------
+import random
+animal = ["meerkat", "lynx", "cat", "dog", "horse", "cow"]
+fruit = ["apple", "orange", "durian", "banana"]
+for i in range(3):
+	password = animal[random.randint(0, len(animal) - 1)] + fruit[random.randint(0, len(fruit) - 1]
+	print password
+
+Question 8:
+-----------
+Given 2 lists - animal list ["chicken", "mouse", "cat", "dog", "horse", "cow"] and adjective list ["great", "awesome", "maverick", "splendid", "gorgeous"]. For each animal, get a random adjective and attach it in front of the animal. Example output would be: "awesome chicken", "gorgeous mouse", etc - print each animal in the order given in the animal list (that starts with "chicken", "mouse" and ends with "cow". Only the adjective is random).
+
+Answer:
+-------
+import random
+animal = ["chicken", "mouse", "cat", "dog", "horse", "cow"]
+adjective = ["great", "awesome", "maverick", "splendid", "gorgeous"]
+
+for each_animal in animal:
+	print adjective[random.randint(0, len(adjective) - 1], each_animal
+

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">To-Do</string>
+    <string name="toDo">Enter Task Below</string>
+    <string name="toDoHint">Enter Task</string>
+    <string name="emptyField">Field is empty</string>
+    <string name="submit">Submit</string>
+    <string name="sortAll">Sort Tasks (Ascending)</string>
+    <string name="sortReverse">Sort Tasks (Descending)</string>
+    <string name="removeAll">Remove Tasks</string>
+    <string name="tasksRemoved">All tasks have been removed</string>
+    <string name="removeItem">Remove Task</string>
+    <string name="editItem">Edit Task</string>
+</resources>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+	<TextView android:layout_width="wrap_content" android:text="@string/toDo"
+		android:id="@+id/toDoTextView" android:layout_height="wrap_content"
+		android:layout_alignParentLeft="true"></TextView>
+	<LinearLayout android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:layout_below="@+id/toDoTextView" android:orientation="horizontal"
+		android:id="@+id/linearLayout1">
+		<EditText android:hint="@string/toDoHint" android:id="@+id/toDoEditText"
+			android:layout_width="fill_parent" android:layout_height="wrap_content"
+			android:layout_weight="1"></EditText>
+		<Button android:layout_width="fill_parent" android:text="@string/submit"
+			android:id="@+id/submitButton" android:layout_height="wrap_content"
+			android:layout_weight="2"></Button>
+	</LinearLayout>
+	<ListView android:layout_width="fill_parent" android:id="@android:id/list"
+		android:layout_height="fill_parent" android:layout_alignLeft="@+id/toDoTextView"
+		android:layout_below="@+id/linearLayout1"></ListView>
+</RelativeLayout>

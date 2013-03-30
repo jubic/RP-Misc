@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="wrap_content">
+	<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+		android:orientation="vertical" android:layout_width="fill_parent"
+		android:layout_height="fill_parent" android:scrollHorizontally="true">
+
+		<TextView android:text="@string/billTextView"
+			android:layout_height="wrap_content" android:layout_width="fill_parent"
+			android:id="@+id/billTextView" android:layout_alignParentRight="true"></TextView>
+
+		<EditText android:layout_width="fill_parent"
+			android:layout_below="@+id/billTextView" android:hint="@string/billHint"
+			android:id="@+id/billEditText" android:layout_height="wrap_content"
+			android:layout_alignLeft="@+id/billTextView" android:inputType="phone"></EditText>
+
+		<LinearLayout android:layout_below="@+id/billEditText"
+			android:layout_width="fill_parent" android:layout_height="wrap_content"
+			android:orientation="horizontal" android:id="@+id/linearLayout1">
+			
+			<TextView android:layout_width="fill_parent" android:text="@string/paxTextView"
+				android:layout_below="@+id/billEditText" android:layout_height="wrap_content"
+				android:id="@+id/paxTextView" android:layout_alignLeft="@+id/billEditText"
+				android:layout_weight="1"></TextView>
+				
+			<TextView android:layout_width="fill_parent" android:text="@string/discountTextView"
+				android:layout_below="@+id/billEditText" android:layout_height="wrap_content"
+				android:id="@+id/discountTextView" android:layout_alignRight="@+id/billEditText"
+				android:layout_weight="1"></TextView>
+		</LinearLayout>
+
+		<LinearLayout android:layout_below="@+id/linearLayout1"
+			android:layout_width="fill_parent" android:layout_height="wrap_content"
+			android:orientation="horizontal" android:id="@+id/linearLayout2">
+			
+			<Spinner android:id="@+id/paxSpinner" android:prompt="@string/paxTextView"
+				android:layout_width="fill_parent" android:layout_below="@+id/paxTextView"
+				android:layout_height="wrap_content" android:layout_alignRight="@+id/paxTextView"
+				android:layout_weight="1"></Spinner>
+
+			<EditText android:layout_width="fill_parent" android:hint="@string/discountHint"
+				android:id="@+id/discountEditText" android:layout_height="wrap_content"
+				android:layout_below="@+id/discountTextView"
+				android:layout_alignLeft="@+id/discountTextView" android:inputType="phone"
+				android:layout_weight="1"></EditText>
+		</LinearLayout>
+
+		<CheckBox android:text="@string/serviceChargeTextView"
+			android:layout_width="fill_parent" android:layout_below="@+id/linearLayout2"
+			android:id="@+id/serviceChargeCheckBox" android:layout_height="wrap_content"
+			android:layout_alignLeft="@+id/paxSpinner"></CheckBox>
+
+		<CheckBox android:text="@string/gstChargeTextView"
+			android:layout_width="fill_parent" android:layout_below="@+id/serviceChargeCheckBox"
+			android:id="@+id/gstChargeCheckBox" android:layout_height="wrap_content"
+			android:layout_alignLeft="@+id/serviceChargeCheckBox"
+			android:layout_alignRight="@+id/serviceChargeCheckBox"></CheckBox>
+
+		<CheckBox android:text="@string/cessChargeTextView"
+			android:layout_width="fill_parent" android:layout_below="@+id/gstChargeCheckBox"
+			android:id="@+id/cessChargeCheckBox" android:layout_height="wrap_content"
+			android:layout_alignLeft="@+id/gstChargeCheckBox"></CheckBox>
+
+		<LinearLayout android:layout_below="@+id/cessChargeCheckBox"
+			android:layout_width="fill_parent" android:layout_height="wrap_content"
+			android:orientation="horizontal" android:id="@+id/linearLayout3">
+			<Button android:layout_width="fill_parent" android:text="@string/calculate"
+				android:id="@+id/calculateButton" android:layout_height="wrap_content"
+				android:layout_below="@+id/cessChargeCheckBox"
+				android:layout_alignLeft="@+id/paxSpinner"
+				android:layout_alignRight="@+id/paxSpinner" android:layout_weight="1" android:clickable="false"></Button>
+
+			<Button android:layout_width="fill_parent" android:text="@string/reset"
+				android:id="@+id/resetButton" android:layout_height="wrap_content"
+				android:layout_below="@+id/cessChargeCheckBox"
+				android:layout_alignLeft="@+id/discountEditText"
+				android:layout_alignRight="@+id/discountEditText"
+				android:layout_weight="1"></Button>
+		</LinearLayout>
+
+		<TextView android:layout_width="fill_parent" android:text="@string/resultTextView"
+			android:layout_below="@+id/linearLayout3" android:layout_height="wrap_content"
+			android:id="@+id/resultTextView" android:layout_alignLeft="@+id/billEditText"
+			android:layout_alignRight="@+id/billEditText"></TextView>
+	</RelativeLayout>
+</ScrollView>

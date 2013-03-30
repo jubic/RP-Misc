@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<home>
+   <space id='1'>
+        <name>kitchen</name>
+        <table>1</table>
+        <chair>2</chair>
+        <bed>0</bed>
+    </space>
+    <space id='2'>
+        <name>living room</name>
+        <table>1</table>
+        <chair>4</chair>
+        <bed>0</bed>
+    </space>
+    <space id='3'>
+        <name>master bed room</name>
+        <table>1</table>
+        <chair>1</chair>
+        <bed>1</bed>
+    </space>
+</home>

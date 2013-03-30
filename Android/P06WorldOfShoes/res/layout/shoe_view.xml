@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="fill_parent"
+	android:orientation="vertical" android:id="@+id/phoneNo">
+	<RelativeLayout android:id="@+id/relativeLayout1"
+		android:layout_height="wrap_content" android:layout_width="fill_parent">
+		<TextView android:layout_height="wrap_content"
+			android:layout_width="wrap_content" android:layout_alignParentLeft="true"
+			android:id="@+id/modelName" android:text="@string/modelString1"></TextView>
+		<TextView android:id="@+id/modelNo" android:text="@string/modelString2"
+			android:layout_height="wrap_content" android:layout_width="wrap_content"
+			android:layout_below="@+id/modelName" android:layout_alignLeft="@+id/modelName"
+			android:layout_alignRight="@+id/modelName"></TextView>
+		<TextView android:layout_height="wrap_content"
+			android:layout_width="wrap_content" android:layout_below="@+id/modelNo"
+			android:layout_alignLeft="@+id/modelNo" android:layout_alignRight="@+id/modelNo"
+			android:id="@+id/price" android:text="@string/modelString3"></TextView>
+		<TextView android:layout_height="wrap_content"
+			android:layout_width="wrap_content" android:layout_below="@+id/price"
+			android:layout_alignLeft="@+id/price" android:layout_alignRight="@+id/price"
+			android:id="@+id/address" android:text="@string/modelString4"
+			android:autoLink="map"></TextView>
+		<TextView android:layout_height="wrap_content"
+			android:layout_width="wrap_content" android:layout_below="@+id/address"
+			android:layout_alignLeft="@+id/address" android:layout_alignRight="@+id/address"
+			android:id="@+id/url" android:text="@string/modelString7"></TextView>
+		<TextView android:layout_height="wrap_content"
+			android:layout_width="wrap_content" android:layout_below="@+id/url"
+			android:layout_alignLeft="@+id/url" android:layout_alignRight="@+id/url"
+			android:id="@+id/email" android:text="@string/modelString5"></TextView>
+		<TextView android:layout_height="wrap_content"
+			android:layout_width="wrap_content" android:layout_below="@+id/email"
+			android:layout_alignLeft="@+id/email" android:layout_alignRight="@+id/email"
+			android:id="@+id/phoneNo" android:text="@string/modelString6"></TextView>
+		<TextView android:layout_height="wrap_content"
+			android:layout_width="wrap_content" android:layout_below="@+id/phoneNo"
+			android:layout_alignLeft="@+id/phoneNo" android:layout_alignRight="@+id/phoneNo"
+			android:id="@+id/openHR" android:text="@string/modelString8"></TextView>
+		<TextView android:layout_height="wrap_content"
+			android:layout_width="wrap_content" android:layout_below="@+id/openHR"
+			android:layout_alignLeft="@+id/openHR" android:layout_alignRight="@+id/openHR"
+			android:id="@+id/closingHR" android:text="@string/modelString9"></TextView>
+		<Button android:layout_height="wrap_content"
+			android:layout_width="wrap_content" android:layout_below="@+id/closingHR"
+			android:layout_alignLeft="@+id/closingHR" android:layout_alignRight="@+id/closingHR"
+			android:id="@+id/callBtn" android:text="@string/modelBtn1"></Button>
+		<Button android:layout_toRightOf="@+id/callBtn"
+			android:layout_height="wrap_content" android:layout_width="wrap_content"
+			android:layout_alignTop="@+id/callBtn" android:layout_alignBottom="@+id/callBtn"
+			android:id="@+id/urlBtn" android:text="@string/modelString10"></Button>
+		<TextView android:layout_toRightOf="@+id/closingHR"
+			android:layout_height="wrap_content" android:layout_width="wrap_content"
+			android:text="TextView" android:layout_alignTop="@+id/closingHR"
+			android:layout_alignBottom="@+id/closingHR" android:id="@+id/closingHrTV"></TextView>
+		<TextView android:layout_toRightOf="@+id/openHR"
+			android:layout_height="wrap_content" android:layout_width="wrap_content"
+			android:text="TextView" android:layout_alignTop="@+id/openHR"
+			android:layout_alignBottom="@+id/openHR" android:id="@+id/openHrTV"></TextView>
+		<TextView android:layout_toRightOf="@+id/phoneNo"
+			android:layout_height="wrap_content" android:layout_width="wrap_content"
+			android:text="TextView" android:layout_alignTop="@+id/phoneNo"
+			android:layout_alignBottom="@+id/phoneNo" android:id="@+id/phoneNoTV"
+			android:autoLink="phone"></TextView>
+		<TextView android:layout_toRightOf="@+id/email"
+			android:layout_height="wrap_content" android:layout_width="wrap_content"
+			android:text="TextView" android:layout_alignTop="@+id/email"
+			android:layout_alignBottom="@+id/email" android:id="@+id/emailTV"
+			android:autoLink="email"></TextView>
+		<TextView android:layout_toRightOf="@+id/url"
+			android:layout_height="wrap_content" android:layout_width="wrap_content"
+			android:text="TextView" android:layout_alignTop="@+id/url"
+			android:layout_alignBottom="@+id/url" android:id="@+id/urlTV"
+			android:autoLink="web"></TextView>
+		<TextView android:layout_toRightOf="@+id/address"
+			android:layout_height="wrap_content" android:layout_width="wrap_content"
+			android:text="TextView" android:layout_alignTop="@+id/address"
+			android:layout_alignBottom="@+id/address" android:id="@+id/addressTV"></TextView>
+		<TextView android:layout_toRightOf="@+id/price"
+			android:layout_height="wrap_content" android:layout_width="wrap_content"
+			android:text="TextView" android:layout_alignTop="@+id/price"
+			android:layout_alignBottom="@+id/price" android:id="@+id/priceTV"></TextView>
+		<TextView android:id="@+id/shoeModelNoTV" android:text="TextView"
+			android:layout_height="wrap_content" android:layout_width="wrap_content"
+			android:layout_toRightOf="@+id/modelNo" android:layout_alignTop="@+id/modelNo"
+			android:layout_alignBottom="@+id/modelNo"></TextView>
+		<TextView android:id="@+id/shoeModelTV"
+			android:layout_height="wrap_content" android:layout_width="wrap_content"
+			android:text="TextView" android:layout_toRightOf="@+id/modelName"
+			android:layout_alignTop="@+id/modelName" android:layout_alignBottom="@+id/modelName"></TextView>
+	</RelativeLayout>
+</LinearLayout>

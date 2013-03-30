@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hello">Hello World!</string>
+    <string name="app_name">The Weather Man</string>
+    <string name="add">Add City</string>
+    <string name="filter">Search</string>
+    <string name="remove">Remove City</string>
+    <string name="remove_all">Remove All</string>
+    <string name="refresh">Refresh</string>
+    <string name="sort">Sort</string>
+</resources>

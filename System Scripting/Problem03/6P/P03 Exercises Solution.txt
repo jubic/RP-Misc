@@ -1,0 +1,49 @@
+== Question 1 ==
+Write a regular expression to check for this pattern "ab12", "cd34", "xy99".No uppercase letters.
+
+Use re.search().
+
+Answer:
+-------
+re.search(r"[a-z]{2}\d{2}", "ab12")
+
+
+== Question 2 ==
+Write a regular expression to check for the following "a12", "b1234", "c34590". It starts with a letter then followed by 1 to 10 numbers.
+
+Use re.search()
+
+Answer:
+-------
+re.search(r"[a-z]\d{1,10}", "a12")
+
+== Question 3 ==
+Write a regular expression to replace all the numbers with "X". Example, a string "1234ab5678" will change to "XXXXabXXXX". Or, "1way" change to "Xway".
+
+Answer:
+-------
+re.sub(r"\d", r"X", "1way")
+
+
+== Question 4 ==
+Write a regular expression to replace all the uppercase letters with "!". Example: "Test" will change to "!est".
+
+Answer:
+-------
+re.sub(r"[A-Z]", "!", "Test")
+
+== Question 5 ==
+Write a regular expression to replace the word "secret" with "XXXXXX" for this sentence, "I have a secret power".
+
+Answer:
+-------
+re.sub(r"secret", "XXXXXX", "I have a secret power")
+
+== Question 6 ==
+Write a regular expression to replace extra spaces with a single space. For example: "One   Two          Three" will be replaced as "One Two Three".
+
+Answer:
+-------
+re.sub(r" +", " ", "One   Two         Three")
+OR
+re.sub(r"\s+", " ", "One   Two         Three")

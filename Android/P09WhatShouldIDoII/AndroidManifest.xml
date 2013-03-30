@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+	android:versionCode="1" android:versionName="1.0"
+	package="sg.edu.rp.c345.p09.whatshoulIdoII">
+	<application android:icon="@drawable/icon" android:label="@string/app_name"
+		android:name="android.app.Application">
+		<activity android:name=".toDoList" android:label="@string/app_name">
+			<intent-filter>
+				<action android:name="android.intent.action.MAIN" />
+				<category android:name="android.intent.category.LAUNCHER" />
+			</intent-filter>
+		</activity>
+
+	</application>
+
+
+</manifest> 

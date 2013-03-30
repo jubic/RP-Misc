@@ -1,0 +1,96 @@
+== Question 1 ==
+
+Open a file called "test.txt". Read the first line and print it out.
+
+Answer:
+-------
+f = open("test.txt")
+lines = f.readlines()
+print lines[0]
+
+== Question 2 ==
+
+Open a file called "test.txt". Remove the content of the file and write "Hello" on the first line of the file.
+
+Answer:
+-------
+f = open("test.txt", "wb")
+f.write("Hello")
+f.close()
+
+== Question 3 ==
+
+Open a file called "test.txt". The file already has some contents. Write "The End" on the very last line of the file.
+
+Answer:
+-------
+f = open("test.txt", "ab")
+f.write("The End")
+f.clone()
+
+== Question 4 ==
+
+A file has content below (total of 4 lines in the file):
+
+One
+Two
+Thre
+Four
+
+Write a progrem to randomly select a line, and print that line out.
+
+Answer:
+-------
+import random
+f = open("test.txt", "rb")
+lines = f.readlines()
+pick = random.randint(0, len(lines) - 1)
+print lines[pick]
+
+== Question 5 ==
+
+A file has content below (total of 3 lines in the file):
+
+joe:pass1
+bob:pass2
+tom:pass3
+
+Read the file and store them into a dictionary called "users" so that the user's password can be printed based on their name.
+
+Example: print users["joe"]
+
+Answer:
+-------
+f = open("test.txt", "rb")
+users = {}
+for line in f.readlines()
+	(k,v) = line.split(":")
+	users[k] = v
+
+print users["joe"]
+
+== Question 6 ==
+
+Write a Python code that will print the last line of the file. Assume the file name is "test.txt".
+
+Answer:
+-------
+f = open("test.txt", "rb")
+lines = f.readlines()
+print lines[len(lines) - 1]
+# OR
+print lines[-1]
+
+== Question 7 ==
+
+Read the two files "fileOne.txt" and "fileTwo.txt", and compare if the first line of both files are the same.
+
+Answer:
+-------
+f1 = open("fileOne.txt")
+f2 = open("fileTwo.txt")
+f1_lines = f1.readlines()
+f2_lines = f2.readlines()
+if f1_lines[0] == f2_lines[0]:
+	print "Same first line"
+

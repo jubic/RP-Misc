@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <RadioButton
+    	android:layout_height="wrap_content"
+    	android:id="@+id/radioButton2"
+    	android:text="@string/usTime"
+    	android:layout_width="wrap_content"
+    	android:layout_toRightOf="@+id/radioButton1"
+    	android:layout_alignTop="@+id/radioButton1"
+    	android:layout_alignBottom="@+id/radioButton1">
+    </RadioButton>
+    <RadioButton
+    	android:layout_height="wrap_content"
+    	android:id="@+id/radioButton1"
+    	android:text="@string/sgTime"
+    	android:layout_width="wrap_content"
+    	android:layout_alignParentTop="true">
+    </RadioButton>
+    <AnalogClock
+    	android:layout_height="wrap_content"
+    	android:layout_below="@+id/radioButton1"
+    	android:id="@+id/analogClock1"
+    	android:layout_width="wrap_content"
+    	android:layout_alignLeft="@+id/radioButton1"
+    	android:layout_alignRight="@+id/radioButton1">
+    </AnalogClock>
+    <TimePicker
+    	android:layout_height="wrap_content"
+    	android:id="@+id/timePicker1"
+    	android:layout_width="wrap_content"
+    	android:layout_below="@+id/analogClock1">
+    </TimePicker>
+    <Button
+    	android:layout_below="@+id/timePicker1"
+    	android:id="@+id/button1"
+    	android:layout_height="wrap_content"
+    	android:text="@string/submit"
+    	android:layout_width="wrap_content"
+    	android:layout_alignLeft="@+id/timePicker1">
+    </Button>
+    <Button android:id="@+id/button2" android:layout_width="wrap_content" 
+    
+    android:text="@string/reset" android:layout_height="wrap_content" 
+    android:layout_toRightOf="@+id/button1" android:layout_alignTop="@+id/button1" 
+    android:layout_alignBottom="@+id/button1"></Button>
+</RelativeLayout>

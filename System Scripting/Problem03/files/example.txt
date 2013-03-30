@@ -1,0 +1,14 @@
+title: Fixing Printer at Woodlands Branch Office
+
+name: Bruce Wayne
+
+date: 2010/08/03 13:30 - 15:05   
+
+problem: Laserjet P1005 doesn't print
+
+p1: The _printer_ attached to the receptionist desk is @not@ printing since yesterday.
+
+solution: Clear the printer queue
+
+p2: The printer queue was stuck with the previous job. I had to delete the print queue, restart the Windows 7 machine attached to the printer.
+

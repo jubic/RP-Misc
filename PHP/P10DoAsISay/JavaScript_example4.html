@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script type="text/javascript">
+            function myFunction()
+            {
+                console.log(y);
+                var y=5;
+                
+                console.log(y);
+                var x=y+2;
+                
+                var y=y+5;
+                console.log(y);
+                
+                var demoP=document.getElementById("demo")
+                demoP.innerHTML="x=" + x;
+            }
+        </script>
+    </head>
+    <body>
+
+        <p>Given that y=5, calculate x=y+2, and display the result.</p>
+        <button onclick="myFunction()">Try it</button>
+
+        <p id="demo"></p>
+
+        
+
+    </body>
+</html>

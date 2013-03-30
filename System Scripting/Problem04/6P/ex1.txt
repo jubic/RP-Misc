@@ -1,0 +1,14 @@
+title: Sembawang Office wireless router problem
+
+name: Clark Kent
+
+date: 2010/08/13 09:30 - 10:45   
+
+problem: Wireless router wouldn't connect to the Internet
+
+p1: Internet connection disappeared after ISP switch. But, connection using IP address only was fine.
+
+solution: DNS Configuration error
+
+p2: The DNS settings were still pointed toward the old ISP. The integrator forgot to change them to the new ISP DNS servers.
+

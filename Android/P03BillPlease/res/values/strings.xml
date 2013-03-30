@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Bill Calculator</string>
+    <string name="billTextView">Enter Bill Amount ($):</string>
+    <string name="billHint">E.G. 12.34</string>
+    <string name="paxTextView">Number of Pax Sharing:</string>
+    <string name="discountTextView">Enter Discount (%):</string>
+    <string name="discountHint">E.G. 10</string>
+    <string name="serviceChargeTextView">Include Service Charge (10%)</string>
+    <string name="gstChargeTextView">Include GST Charge (7%)</string>
+    <string name="cessChargeTextView">Include CESS Charge (1%)</string>
+    <string name="calculate">Calculate</string>
+    <string name="reset">Reset</string>
+    <string name="resultTextView"></string>
+    <string name="error">Empty Fields Detected</string>
+    <string name="amountInvalid">Amount Invalid</string>
+</resources>

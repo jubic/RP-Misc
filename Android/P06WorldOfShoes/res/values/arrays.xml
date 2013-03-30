@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string-array name="restaurants">
+		<item>Ban Leong Wah Hoe Seafood,122 Casuarina Road,
+			64522824,,http://www.wahhoe-seafood.com/,5:00pm,1:30pm,1.3767,103.82817
+		</item>
+	</string-array>
+</resources>

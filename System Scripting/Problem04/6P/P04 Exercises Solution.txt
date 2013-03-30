@@ -1,0 +1,139 @@
+== Problem 1 ==
+Given a text "One", "Two", "Three", "Four", create a string that can be assigned to a Powerpoint shape to form bulleted entries like
+
+ * One
+ * Two
+ * Three
+ * Four
+
+Note: you may assume the following "p" object is created, and it's using Shapes(2).
+p = Presentation.Slides.Add(2, constants.ppLayoutText)
+p.Shapes(2).  # note this is not a complete code
+
+Answer:
+-------
+p = Presentation.Slides.Add(2, constants.ppLayoutText)
+p.Shapes(2).TextFrame.TextRange.Text = "One\r\nTwo\r\nThree\r\nFour\r\n"
+
+== Problem 2 ==
+Given a list ["One", "Two", "Three", "Four"], create a string that can be assigned to a Powerpoint shape to form bulleted entries like
+
+ * One
+ * Two
+ * Three
+ * Four
+
+Note: you may assume the following "p" object is created, and it's using Shapes(2).
+p = Presentation.Slides.Add(2, constants.ppLayoutText)
+p.Shapes(2).  # note this is not a complete code
+
+Answer:
+-------
+str = ""
+d = ["One", "Two", "Three", "Four"]
+for s in d:
+	str += s + "\r\n"
+
+p = Presentation.Slides.Add(2, constants.ppLayoutText)
+p.Shapes(2).TextFrame.TextRange.Text = str
+
+== Problem 3 ==
+Given the following code:
+d = []
+d.append("One")
+d.append("Two")
+d.append("Three")
+d.append("Four")
+
+Write a code to make the content of "d" list to have a string that can be assigned to a Powerpoint shape to form bulleted entries like:
+
+ * One
+ * Two
+ * Three
+ * Four
+
+Note: you may assume the following "p" object is created, and it's using Shapes(2).
+p = Presentation.Slides.Add(2, constants.ppLayoutText)
+p.Shapes(2).  # note this is not a complete code
+
+Answer:
+-------
+str = ""
+d = ["One", "Two", "Three", "Four"]
+for s in d:
+	str += s + "\r\n"
+
+p = Presentation.Slides.Add(2, constants.ppLayoutText)
+p.Shapes(2).TextFrame.TextRange.Text = str
+
+== Problem 4 ==
+Given a text "One", "Two", "Sub Two", "Three" create a string that can be assigned to a Powerpoint shape to form bulleted entries like
+
+ * One
+ * Two
+    * Sub Two
+ * Three
+
+Complete the following code:
+
+p = Presentation.Slides.Add(2, constants.ppLayoutText)
+p.Shapes(2)...
+
+Answer:
+-------
+p = Presentation.Slides.Add(2, constants.ppLayoutText)
+p.Shapes(2).TextFrame.TextRange.Text = "One\r\nTwo\r\nThree\r\nFour"
+p.Shapes(2).TextFrame.TextRange.Text.Paragraphs(3).Indentlevel = 2
+
+== Problem 5 ==
+Given a list ["One", "Two", "Sub Two", "Three"], create a string that can be assigned to a Powerpoint shape to form bulleted entries like
+
+ * One
+ * Two
+   * Sub Two
+ * Three
+
+Note: you may assume the following "p" object is created, and it's using Shapes(2).
+p = Presentation.Slides.Add(2, constants.ppLayoutText)
+p.Shapes(2).  # note this is not a complete code
+
+Answer:
+-------
+str = ""
+d = ["One", "Two", "Sub Two", "Three"]
+for s in d:
+	str += s + "\r\n"
+
+p = Presentation.Slides.Add(2, constants.ppLayoutText)
+p.Shapes(2).TextFrame.TextRange.Text = str
+p.Shapes(2).TextFrame.TextRange.Text.Paragraphs(3).Indentlevel = 2
+
+== Problem 6 ==
+Given the following code:
+d = []
+d.append("One")
+d.append("Two")
+d.append("Sub Two")
+d.append("Three")
+
+Write a code to make the content of "d" list to have a string that can be assigned to a Powerpoint shape to form bulleted entries like:
+
+ * One
+ * Two
+   * Sub Two
+ * Three
+
+Note: you may assume the following "p" object is created, and it's using Shapes(2).
+p = Presentation.Slides.Add(2, constants.ppLayoutText)
+p.Shapes(2).  # note this is not a complete code
+
+Answer:
+-------
+str = ""
+d = ["One", "Two", "Sub Two", "Three"]
+for s in d:
+	str += s + "\r\n"
+
+p = Presentation.Slides.Add(2, constants.ppLayoutText)
+p.Shapes(2).TextFrame.TextRange.Text = str
+p.Shapes(2).TextFrame.TextRange.Text.Paragraphs(3).Indentlevel = 2

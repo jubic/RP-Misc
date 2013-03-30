@@ -1,0 +1,14 @@
+title: Core Web Servers down
+
+name: Tony Stark
+
+date: 2010/09/28 19:30 - 23:05   
+
+problem: Web servers became inaccessible after configuration changes
+
+p1: The web server went down due to misconfiguration in the Apache config. Some supporting libraries were also missing in the Linux machines that host the web server.
+
+solution: Reinstall Linux and reconfigure Apache
+
+p2: The integrator was inexperience with Linux, and the deployment of Apcahe config was done without proper checking and testing. It took about 1 hour to pinpoint the config error, and the web servers were inaccesible during that period.
+
